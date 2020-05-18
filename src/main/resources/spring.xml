@@ -7,6 +7,8 @@
 
     <!-- Injecting dependency for class Bike into main using bean id -->
     <!--<bean id="vehicle" class="org.mainaak.Bike"/>-->
+    <!--Equivalent of the above declaration is annotating the config class with @Configuration and the class in question
+    with @Bean with it's initializer-->
 
     <!-- Injecting dependency for any class in package org.mainaak by using the generalised name of class -->
     <!-- Uses the annotation @Component in the target class -->
