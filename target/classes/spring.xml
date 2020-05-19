@@ -7,19 +7,21 @@
 
     <!-- Injecting dependency for class Bike into main using bean id -->
     <!--<bean id="vehicle" class="org.mainaak.Bike"/>-->
+    <!--Equivalent of the above declaration is annotating the config class with @Configuration and the class in question
+    with @Bean with it's initializer-->
 
     <!-- Injecting dependency for any class in package org.mainaak by using the generalised name of class -->
     <!-- Uses the annotation @Component in the target class -->
     <context:component-scan base-package="org.mainaak"></context:component-scan>
 
     <!-- Injecting dependency for class Tyre and then setting the value of a String in Tyre to Pirelli -->
-    <bean id="tyre" class="org.mainaak.Tyre">
+    <!--<bean id="tyre" class="org.mainaak.Tyre">-->
         <!-- Setting value into the variable when there is no constructor -->
         <!--<property name="brand" value="Pirelli"/>-->
 
         <!-- Setting value into the constructor -->
         <!--<constructor-arg name="brandInConstructor" value="Continental"/>-->
-    </bean>
+    <!--</bean>-->
 
 
 </beans>
